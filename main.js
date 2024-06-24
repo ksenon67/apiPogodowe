@@ -10,9 +10,6 @@ const pressure = document.querySelector(".pressure");
 const humidity = document.querySelector(".humidity");
 const windSpeed = document.querySelector(".wind_speed");
 const clouds = document.querySelector(".clouds");
-const locationForm = document.getElementById('location-form');
-const locationNameInput = document.getElementById('location-name');
-const savedLocationsList = document.getElementById('saved-locations');
 
 const apiLink = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const apiKey = '&appid=3d5ad419d8fb3df9762b2f6493181242';
