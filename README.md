@@ -18,7 +18,7 @@ Aplikacja pogodowa pozwala na sprawdzanie aktualnych warunków pogodowych w wybr
 
 1. Sklonuj repozytorium:
     ```bash
-    git clone https://github.com/TwojeRepozytorium/aplikacja-pogodowa.git
+    git clone https://github.com/ksenon67/aplikacja-pogodowa.git
     ```
 2. Przejdź do katalogu z projektem:
     ```bash
