@@ -1,31 +1,38 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #007BFF;
+    background-color: #4CAF50;
     color: white;
-    padding: 1rem;
     text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    margin: 0;
 }
 
 main {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .search {
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-input[type="text"] {
+.search input {
     padding: 0.5rem;
     font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-button {
+.search button, .manage-locations button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     background-color: #007BFF;
@@ -34,43 +41,68 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+.search-buttons-location button {
+    padding: 0.4rem 0.3rem;
+    font-size: 0.7rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
-.weather {
-    display: flex;
-    column-gap: 5em;
-}
-.weather, .manage-locations {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+.error {
+    color: red;
+    margin-top: 0.5rem;
 }
 
-ul#saved-locations {
-    list-style: none;
+.app {
+    margin-top: 2rem;
+}
+
+.weather {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather_img {
+    text-align: center;
+}
+
+.manage-locations {
+    margin-top: 2rem;
+}
+
+.manage-locations form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.manage-locations ul {
+    list-style-type: none;
     padding: 0;
 }
 
-ul#saved-locations li {
-    margin-bottom: 0.5rem;
+.manage-locations li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem;
+    background-color: white;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
 }
 
-ul#saved-locations li button {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
+.manage-locations button {
+    margin-left: 0.5rem;
 }
 
 footer {
-    background-color: #007BFF;
+    background-color: #4CAF50;
     color: white;
     text-align: center;
-    position: fixed;
-    width: 100%;
+    padding: 1rem 0;
+    position: absolute;
     bottom: 0;
+    width: 100%;
 }
