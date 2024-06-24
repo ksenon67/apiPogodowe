@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikacja pogodowa</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Aplikacja pogodowa</h1>
+    </header>
+    <main>
+        <section class="search">
+            <input type="text" placeholder="Podaj nazwę miasta">
+            <button>Sprawdź pogodę</button>
+            <p class="error"></p>
+        </section>
+
+        <section class="app">
+            <h2 class="city"></h2>
+            <div class="weather">
+                <div>
+                    <p>Temperatura odczuwalna: <span class="feels_like"></span></p>
+                    <p>Ciśnienie: <span class="pressure"></span></p>
+                    <p>Wilgotność: <span class="humidity"></span></p>
+                    <p>Prędkość wiatru: <span class="wind_speed"></span></p>
+                    <p>Zachmurzenia: <span class="clouds"></span></p>
+                </div>
+                <div>
+                    <div class="weather_img">
+                        <img src="" alt="">
+                        <p class="temp"></p>
+                    </div>
+                    <p class="weather_description"></p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="manage-locations">
+            <h2>Zarządzaj lokalizacjami</h2>
+            <form id="location-form">
+                <input type="text" id="location-name" placeholder="Nazwa lokalizacji">
+                <button type="submit">Zapisz lokalizację</button>
+            </form>
+            <ul id="saved-locations">
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Projekt WSB Merito Gdańsk 2024</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
